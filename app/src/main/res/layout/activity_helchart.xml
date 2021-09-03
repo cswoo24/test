@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AnyChartActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:gravity="center"
+        android:text="차트 종류"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/helloline"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:text="Line Chart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/hellocolumn"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:text="Column Chart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/hellocombo"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:text="Combo Chart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/hellogoodbad"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="18dp"
+                android:text="Good Bad Chart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/hellopie"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:text="Pie Chart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/hellopreview"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="18dp"
+                android:text="Preview Chart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/hellospeed"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:text="Speed Chart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/hellotempo"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:text="Tempo Chart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/hellobubble"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="28dp"
+                android:text="Bubble Chart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="HelloChart의 특징\n\n메서드의 설명이 다른 라이브러리에 비해 많이 부족함\nPreview Chart와 같은 다른 라이브러리에 없는 차트가 존재함"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

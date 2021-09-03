@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AnyChartActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
+        android:gravity="center"
+        android:text="차트 종류"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/anyareachart"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:text="Area Chart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/anybarchart"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:text="Bar Chart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/anyboxchart"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:text="Box Chart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/anybubblechart"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:text="Bubble Chart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/anybubblemap"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:text="Bubble Map"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/anychoroplethmap"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:text="Choropleth Map"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/anycirculargauge"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:text="Circular Gauge"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/anycolumnchart"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:text="Column Chart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/anycombinedchart"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:text="Combined Chart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/anyconnectormap"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:text="Connector Map"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/anyfunnelchart"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="18dp"
+                android:text="Funnel Chart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.99" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Line Column Dependency Chart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <lecho.lib.hellocharts.view.LineChartView
+        android:id="@+id/hel_linedepen"
+        android:layout_width="405dp"
+        android:layout_height="197dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <lecho.lib.hellocharts.view.ColumnChartView
+        android:id="@+id/hel_columndepen"
+        android:layout_width="408dp"
+        android:layout_height="222dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Column Chart의 Data를 선택(클릭)하면 상세 데이터를 Line Chart를 통해 보여주는 차트\nLine Chart의 색은 Column Chart의 색을 따라감\nLine Chart는 Column Chart에 종속되어 있음(차트 이름이 Line Column Dependency Chart인 이유)"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

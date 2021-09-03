@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Performance Line Chart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/performance_line_chart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+
+
+    <SeekBar
+        android:id="@+id/seekbarValues"
+        android:layout_width="328dp"
+        android:layout_height="27dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:layout_toLeftOf="@+id/tvValueCount"
+        android:max="15000"
+        android:paddingBottom="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/performance_line_chart" />
+
+    <TextView
+        android:id="@+id/tvValueCount"
+        android:layout_width="58dp"
+        android:layout_height="26dp"
+        android:layout_alignBottom="@+id/seekbarValues"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="116dp"
+        android:gravity="right"
+        android:text="-"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="차트 밑의 바를 드래그해 파형을 조절해 데이터를 볼 수 있음 (0~15000)"
+        android:textColor="@color/black"
+        android:textSize="16.5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

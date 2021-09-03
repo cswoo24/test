@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">severalchartguideapp</string>
+
+    <string name="scrollViewStart">START OF SCROLLVIEW</string>
+    <string name="scrollViewEnd">END OF SCROLLVIEW</string>
+</resources>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.severalchartguideapp">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!--인터넷 url 접속 사용하기 위해 추가 -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Severalchartguideapp">
+
+        <activity android:name=".Hello.HelLineinputActivity" />
+        <activity android:name=".Hello.HelPieActivity" />
+        <activity android:name=".Hello.HelLineforActivity" />
+        <activity android:name=".Hello.HelMultiLineActivity" />
+        <activity android:name=".Hello.HelLineSelectActivity" />
+        <activity android:name=".Hello.HelColumnSelectActivity" />
+        <activity android:name=".Hello.HelColumnActivity" />
+        <activity android:name=".Hello.HelSubColumnActivity" />
+        <activity android:name=".Hello.HelStackedActivity" />
+        <activity android:name=".Hello.HelNegSubColumnActivity" />
+        <activity android:name=".Hello.HelNegStackedActivity" />
+        <activity android:name=".Hello.HelComboActivity" />
+        <activity android:name=".Hello.HelGoodBadActivity" />
+        <activity android:name=".Hello.HelLinColDependencyActivity" />
+        <activity android:name=".Hello.HelComboSelectActivity" />
+        <activity android:name=".Hello.HelPreviewSelectActivity" />
+        <activity android:name=".Hello.HelPreviewLineActivity" />
+        <activity android:name=".Hello.HelPreviewColumnActivity" />
+        <activity android:name=".Hello.HelSpeedActivity" />
+        <activity android:name=".Hello.HelTempoActivity" />
+        <activity android:name=".Hello.HelBubbleActivity" />
+        <activity android:name=".HelloChartActivity" />
+
+        <activity android:name=".AnyAtoFActivity" />
+        <activity android:name=".AnyGtoQActivity" />
+        <activity android:name=".AnyRtoZActivity" />
+        <activity android:name=".Any.AnyLineActivity" />
+        <activity android:name=".Any.AnyColumnActivity" />
+        <activity android:name=".Any.AnyColumn3DActivity" />
+        <activity android:name=".Any.AnyColumnSelectActivity" />
+        <activity android:name=".Any.AnyCombinedActivity" />
+        <activity android:name=".Any.AnyAreaActivity" />
+        <activity android:name=".Any.AnyArea3DActivity" />
+        <activity android:name=".Any.AnyAreaSelectActivity" />
+        <activity android:name=".Any.AnyBarActivity" />
+        <activity android:name=".Any.AnyBar3DActivity" />
+        <activity android:name=".Any.AnyBarSelectActivity" />
+        <activity android:name=".Any.AnyPieActivity" />
+        <activity android:name=".Any.AnyRadarActivity" />
+        <activity android:name=".Any.AnyScatterActivity" />
+        <activity android:name=".Any.AnyBoxActivity" />
+        <activity android:name=".Any.AnyBubbleActivity" />
+        <activity android:name=".Any.AnyBubbleMapActivity" />
+        <activity android:name=".Any.AnyChoroplethMapActivity" />
+        <activity android:name=".Any.AnyCircularGaugeActivity" />
+        <activity android:name=".Any.AnyConnectorMapActivity" />
+        <activity android:name=".Any.AnyFunnelActivity" />
+        <activity android:name=".Any.AnyGanttActivity" />
+        <activity android:name=".Any.AnyHeatMapActivity" />
+        <activity android:name=".Any.AnyHiloActivity" />
+        <activity android:name=".Any.AnyLinearColorScaleActivity" />
+        <activity android:name=".Any.AnyMekkoActivity" />
+        <activity android:name=".Any.AnyMosaicActivity" />
+        <activity android:name=".Any.AnyOHLCActivity" />
+        <activity android:name=".Any.AnyParetoActivity" />
+        <activity android:name=".Any.AnyPertActivity"  />
+        <activity android:name=".Any.AnyPointMapActivity" />
+        <activity android:name=".Any.AnyPolarActivity" />
+        <activity android:name=".Any.AnyPyramidActivity" />
+        <activity android:name=".Any.AnyQuadrantActivity" />
+        <activity android:name=".Any.AnyRangeActivity" />
+        <activity android:name=".Any.AnyResourceActivity" />
+        <activity android:name=".Any.AnySunburstActivity" />
+        <activity android:name=".Any.AnyTagcloudActivity" />
+        <activity android:name=".Any.AnyThermometerActivity" />
+        <activity android:name=".Any.AnyTreemapActivity" />
+        <activity android:name=".Any.AnyTwoPiesActivity" />
+        <activity android:name=".Any.AnyVennDiagramActivity" />
+        <activity android:name=".Any.AnyVerticalActivity" />
+        <activity android:name=".Any.AnyWaterfallActivity" />
+        <activity android:name=".Any.AnyWinddirectionActivity" />
+        <activity android:name=".Any.AnyWindspeedActivity" />
+        <activity android:name=".AnyChartActivity" />
+
+        <activity android:name=".William.WilLineSelectActivity" />
+        <activity android:name=".William.WilMultiLineActivity" />
+        <activity android:name=".William.WilLineActivity" />
+        <activity android:name=".William.WilBarSelectActivity" />
+        <activity android:name=".William.WilGroupBarActivity" />
+        <activity android:name=".William.WilHorizontalBarActivity" />
+        <activity android:name=".William.WilBarActivity" />
+        <activity android:name=".William.WilStackBarSelectActivity" />
+        <activity android:name=".William.WilStackBarActivity" />
+        <activity android:name=".William.WilHorizontalStackBarOneActivity" />
+        <activity android:name=".William.WilHorizontalStackBarTwoActivity" />
+        <activity android:name=".WilliamChartActivity" />
+
+        <activity android:name=".MPAndroid.MPLineActivity" />
+        <activity android:name=".MPAndroid.MPMultiLineActivity" />
+        <activity android:name=".MPAndroid.MPLineSelectActivity" />
+        <activity android:name=".MPAndroid.MPBarActivity" />
+        <activity android:name=".MPAndroid.MPGroupBarActivity" />
+        <activity android:name=".MPAndroid.MPStackBarActivity" />
+        <activity android:name=".MPAndroid.MPBarPosNegActivity" />
+        <activity android:name=".MPAndroid.MPBarSelectActivity" />
+        <activity android:name=".MPAndroid.MPHorizontalBarActivity" />
+        <activity android:name=".MPAndroid.MPCombinedActivity" />
+        <activity android:name=".MPAndroid.MPPieActivity" />
+        <activity android:name=".MPAndroid.MPCandleStickActivity" />
+        <activity android:name=".MPAndroid.MPRadarActivity" />
+        <activity android:name=".MPAndroid.MPScatterActivity" />
+        <activity android:name=".MPAndroid.MPFilledLineActivity" />
+        <activity android:name=".MPAndroid.MPBubbleActivity" />
+        <activity android:name=".MPAndroid.MPDrawActivity" />
+        <activity android:name=".MPAndroid.MPHalfPieActivity" />
+        <activity android:name=".MPAndroid.MPHorizontalNegActivity" />
+        <activity android:name=".MPAndroid.MPInvertedLineActivity" />
+        <activity android:name=".MPAndroid.MPLineColoredActivity" />
+        <activity android:name=".MPAndroid.MPLineTimeActivity" />
+        <activity android:name=".MPAndroid.MPBarSinusActivity" />
+        <activity android:name=".MPAndroid.MPPerformancelineActivity" />
+        <activity android:name=".MPAndroid.MPPieSelectActivity" />
+        <activity android:name=".MPAndroid.MPPiePolylineActivity" />
+        <activity android:name=".MPAndroid.MPRealTimelineActivity" />
+        <activity android:name=".MPAndroid.MPScrollViewActivity" />
+        <activity android:name=".MPAndroid.MPStackedNegActivity" />
+        <activity android:name=".MPAndroid.MPDynamicAddLineActivity" />
+        <activity android:name=".MPAndroid.MPBarSineCosineActivity" />
+        <activity android:name=".MPAndroidChartActivity" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

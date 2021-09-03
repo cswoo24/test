@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:gravity="center"
+        android:text="Bar Chart Select"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.843"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/MPBarChart"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/btn"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Bar Chart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/MPGroupBarChart"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/btn"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Group Bar Chart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/MPBarPosNegChart"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/btn"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Bar Positive Negative Chart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/MPBarSinusChart"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/btn"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Bar Sinus Chart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/MPBarSinCosChart"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/btn"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Bar Sine Cosine Chart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/MPHorizontalBarChart"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/btn"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Horizontal Bar Chart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/MPHorizontalNegChart"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/btn"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Horizontal Bar Negative Chart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/MPStackBarChart"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/btn"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Stack Bar Chart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/MPStackNegChart"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="35dp"
+                android:background="@drawable/btn"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Stack Bar Negative Chart"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.99" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
